@@ -53,7 +53,7 @@ pub struct Refund<'info>{
 
 impl <'info> Refund <'info>{
 
-    pub fn refund_and_close_vault(&mut self)->Result<()>{
+    pub fn refund_and_close_vault(&mut self,_seed: u64)->Result<()>{
 
         // we provide the seeds and the bump of the escrow in this section, so that the program can sign the transactions for the pda
         
